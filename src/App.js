@@ -29,6 +29,9 @@ reminder: false,
 }
 ]
 )
+const deleteTask = (id) =>{
+  setTasks(tasks.filter((task) => task.id !== id))
+}
   return (
     <div className="App">
       <header className="App-header">
@@ -36,7 +39,7 @@ reminder: false,
         <Header />
         <Button />
       </header>
-      <Tasks tasks={tasks}/>
+      {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask}/> : <p style={{ color: 'red'}}>Nothing to show</p>}
       <Footer />
     </div>
   );

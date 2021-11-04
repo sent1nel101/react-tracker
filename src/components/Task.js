@@ -1,10 +1,16 @@
 import React from 'react'
+import reactDom from 'react-dom'
+import { FaTimes } from 'react-icons/fa'
 
-const Task = (props) => {
+const Task = ({ task, onDelete }) => {
     return (
         <div className='task'>
-            <h3>{props.task.text}</h3>
-            <p>{props.task.day}</p>
+            <div class="tasksContainer">
+                <h3>{task.text}</h3>
+                <p>{task.day}</p>
+            </div>
+            <FaTimes style={{color: 'red', cursor: 'pointer'}} 
+            onClick={() => onDelete(task.id)} />
         </div>
     )
 }
