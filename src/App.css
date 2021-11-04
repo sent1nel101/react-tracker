@@ -23,19 +23,17 @@ body{
   min-height: 10vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   font-size: calc(10px + 2vmin);
   color: #282c34;
   border-bottom: 1px solid #333;
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
 }
 .App-header h1{
   letter-spacing: .2em;
+  text-shadow: 2px 2px 3px rgb(148, 144, 144);
 }
 
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
@@ -44,4 +42,32 @@ body{
   to {
     transform: rotate(360deg);
   }
+}
+.footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 12px;
+}
+.btn{
+  display: inline-block;
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+  box-shadow: 2px 2px 3px rgb(148, 144, 144);
+}
+.task{
+  background: rgba(211, 211, 211, 0.397);
+  text-align: left;
+  padding:10px 20px;
+  margin: 5px;  
+  color:rgba(51, 51, 51, 0.712);
 }
