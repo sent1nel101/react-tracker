@@ -1,6 +1,8 @@
 body{  
   background: white;
   font-variant: small-caps;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .App {
@@ -44,12 +46,15 @@ body{
   }
 }
 .footer{
+  font-size: 12px;
+}
+/* .footer{
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   font-size: 12px;
-}
+} */
 .btn{
   display: inline-block;
   background: black;
@@ -64,6 +69,11 @@ body{
   font-family: inherit;
   box-shadow: 2px 2px 3px rgb(148, 144, 144);
 }
+.btn-block{
+  display:block;
+  background: black;
+  color:white;
+}
 .task{
   background: rgba(211, 211, 211, 0.397);
   text-align: left;
@@ -74,4 +84,17 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.add-form{
+  margin-top: 1rem;
+}
+.reminder{
+  border-left: 5px solid green;
+}
+input{
+  width: 100%;
+  margin: 5px;
+}
+.form-control{  
+  text-align: left;
 }
